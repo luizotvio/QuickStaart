@@ -3,8 +3,12 @@
   <head>
     <title>Quick Staart</title>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minumum-scale=1.0, initial-scale=1.0"
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/style.css" />
@@ -15,7 +19,7 @@
       <div class="container centralizar">
         <!--container da esquerda-->
         <div class="principal">
-          <h1 class="principal-logo">Flash</h1>
+          <h1 class="principal-logo">⚡Flash</h1>
           <h2 class="principal-titulo">
             Aprenda de forma rápida simples e divertida o vocabulário técnico
           </h2>
@@ -25,30 +29,22 @@
             fixar o significado.
           </p>
           <div class="botoes">
-            <button class="botao">Próxima pergunta</button>
-            <button class="botao">Revelar resposta</button>
+            <button onclick="buscarInformacao()" class="botao">
+              Próxima pergunta
+            </button>
+            <button onclick="revelarResposta()" class="botao">
+              Revelar resposta
+            </button>
           </div>
         </div>
       </div>
 
-      <div class="container centralizar">
+      <div id="cardContainer" class="container centralizar">
         <!--container da direita-->
-        <div>
-          <!--card-->
-          <div>
-            <!--card pergunta-->
-            <h1>O que é HTML?</h1>
-          </div>
-          <div>
-            <!--card resposta-->
-            <p>
-              A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de
-              computador que compõem a maior parte das páginas da internet e dos
-              aplicativos online
-            </p>
-          </div>
+        
         </div>
       </div>
     </div>
   </body>
+  <script src="js/index.js"></script>
 </html>
